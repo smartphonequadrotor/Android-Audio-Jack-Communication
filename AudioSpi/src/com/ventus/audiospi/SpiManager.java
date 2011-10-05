@@ -53,33 +53,6 @@ public class SpiManager {
 	 * This method will be run by the client to execute some meaningless debugging sounds
 	 * to check the voltage levels produced etc.
 	 */
-//	public void debug(){
-//		if(minBufferSize < SOUND_SIZE){
-//			Log.e(TAG, "Buffer size too small");
-//		}
-//		
-//		//generate the initial silence
-//		for (int index = 0; index < INITIAL_SILENCE; index ++){
-//			soundBuffer[index] = PCM_BIT_LOW;
-//		}
-//		
-//		//Generate rectangular pulses
-//		short currentLevel = PCM_BIT_LOW;
-//		for (int index = INITIAL_SILENCE; index < SOUND_SIZE; index++){
-//			if (index % PULSE_WIDTH == 0) {
-//				if (currentLevel == PCM_BIT_HIGH)
-//					currentLevel = PCM_BIT_LOW;
-//				else
-//					currentLevel = PCM_BIT_HIGH;
-//			}
-//			soundBuffer[index] = currentLevel;
-//		}
-//		
-//		//now play the sound
-//		playSoundBuffer();
-//		
-//		//attempt reading (remove later)
-//	}
 	public void debug(){
 		if(minBufferSize < SOUND_SIZE){
 			Log.e(TAG, "Buffer size too small");
